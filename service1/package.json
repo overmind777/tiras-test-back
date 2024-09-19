@@ -1,0 +1,24 @@
+{
+  "name": "service1",
+  "description": "Docker service1 tiras",
+  "type": "module",
+  "scripts": {
+    "start": "node index1.js",
+    "start:dev": "nodemon --inspect ./index1.js 5001"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index1.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dgram": "^1.0.1",
+    "express": "^4.21.0",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.7.5"
+  },
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^3.1.5"
+  }
+}
