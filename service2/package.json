@@ -1,0 +1,20 @@
+{
+  "name": "service2",
+  "version": "1.0.0",
+  "description": "Docker service2 tiras",
+  "main": "index2.js",
+  "scripts": {
+    "start": "node index2.js",
+    "start:dev": "nodemon --inspect ./index2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  },
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "firebase-admin": "^12.5.0",
+    "http": "^0.0.1-security"
+  }
+}

@@ -3,12 +3,12 @@ const admin = require("firebase-admin");
 const { createServer } = require("http");
 
 // Ініціалізація Firebase Admin SDK
-const serviceAccount = require("./tiras-test-firebase-adminsdk-j7ysu-38a52e03b6.json"); // Замість цього вкажіть шлях до вашого файлу ключа
+const serviceAccount = require("./tiras-test-firebase-adminsdk-j7ysu-10ed0bff12.json"); // Замість цього вкажіть шлях до вашого файлу ключа
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
 
-const db = admin.firestore();
+// const db = admin.firestore();
 const messaging = admin.messaging();
 const udpServer = dgram.createSocket("udp4");
 
@@ -43,6 +43,6 @@ udpServer.on("message", (message, remote) => {
 });
 
 // Запуск UDP сервера
-udpServer.bind(3001, () => {
-  console.log("UDP сервер на сервер2 запущений на порту 3001");
+udpServer.bind(6005, () => {
+  console.log("UDP сервер на сервер2 запущений на порту 6005");
 });
